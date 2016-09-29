@@ -19,7 +19,7 @@ POP动画结束后，不会回到起始位置。
 
 我们先看一个例子：
 
-![Alt Text]()
+![Alt Text](https://github.com/tiantianlan/Image/blob/master/POP/Cell.gif)
 
 ##2. 基础用法
 
@@ -124,10 +124,8 @@ basic.completionBlock = ^(POPAnimation *anim, BOOL finished) { //完成状态blo
 ```
 
 动画效果:
-![Alt Text](https://github.com/tiantianlan/Image/blob/master/POP/a.gif)
 
-
-<img src="https://github.com/tiantianlan/Image/blob/master/POP/scale.gif"/>
+![Alt Text](https://github.com/tiantianlan/Image/blob/master/POP/scale.gif)
 
 ##4. POPSpringAnimation
 POPSpringAnimation 对属性进行动画，具有回弹效果。
@@ -139,7 +137,7 @@ POPSpringAnimation 对属性进行动画，具有回弹效果。
 > 5. dynamicsFriction 摩擦力
 > 6. velocity 速率
 
-例1：控制View的Center
+例1：根据物理特性控制View的Center
 
 ```
 POPSpringAnimation *spring = [POPSpringAnimation animationWithPropertyNamed:kPOPViewCenter];
@@ -161,6 +159,7 @@ spring.completionBlock = ^(POPAnimation *anim, BOOL finished){
 ```
 
 动画效果:
+![Alt Text](https://github.com/tiantianlan/Image/blob/master/POP/springBasic.gif)
 
 例2：绘制一个弹性的圆
 
@@ -174,6 +173,7 @@ strokeAnimation.removedOnCompletion = NO;
 ```
  
 动画效果:
+![Alt Text](https://github.com/tiantianlan/Image/blob/master/POP/circle.gif)
 
 
 ##5.POPDecayAnimation
@@ -187,6 +187,8 @@ anim.deceleration = 0.998;
 [self.roundView.layer pop_addAnimation:anim forKey:@"AnimationPosition"];
 ```
 动画效果：
+![Alt Text](https://github.com/tiantianlan/Image/blob/master/POP/decay.gif)
+
 
 
 ##6.POPCustomAnimation
@@ -232,7 +234,7 @@ prop.threshold = 0.01;  // 值越大block调用的次数越少，默认不设置
 
 
 动画效果：
-
+![Alt Text](https://github.com/tiantianlan/Image/blob/master/POP/time.gif)
 
 
 
@@ -241,7 +243,7 @@ prop.threshold = 0.01;  // 值越大block调用的次数越少，默认不设置
 可以将多种效果组合在一起够成动画。
 只需要将动画创建好，依次增加到view上即可。
 
-例：弹簧动画改变Y值 + 基础动画改变透明度 + 基础动画旋转
+例1：push视图 弹簧动画改变Y值 + 基础动画改变透明度 + 基础动画旋转
 
 ```
 POPSpringAnimation *anim = [POPSpringAnimation animationWithPropertyNamed:kPOPLayerPositionY];
@@ -268,6 +270,16 @@ rotationAnim.toValue = @(0);
 [self.pushView.layer pop_addAnimation:rotationAnim forKey:@"AnimateRotation"];
 ```
 动画效果：
+
+![Alt Text](https://github.com/tiantianlan/Image/blob/master/POP/push.gif)
+
+alert:
+
+![Alt Text](https://github.com/tiantianlan/Image/blob/master/POP/alert.gif)
+
+进度条:
+
+https://github.com/tiantianlan/Image/blob/master/POP/progress.gif
 
 ##8.总结
 学习iOS动画最好先学习POP动画，比较简单易懂，而且用法都是一样的。
