@@ -17,6 +17,10 @@ POP动画结束后，不会回到起始位置。
 >
 >POPCustomAnimation 自定义动画
 
+我们先看一个例子：
+
+![Alt Text]()
+
 ##2. 基础用法
 
 ###2.1 方法创建
@@ -69,7 +73,7 @@ typedef void (^POPAnimationDidApplyBlock)(POPAnimation *anim);
 
 ```
 
-例：
+block用法例子：
 
 ```
 basic.completionBlock = ^(POPAnimation *anim, BOOL finished) { //完成状态block
@@ -94,7 +98,7 @@ basic.duration = 0.4; //持续时间
 ```
 动画效果：
 
-![Alt Text]()
+![Alt Text](https://github.com/tiantianlan/Image/blob/master/POP/basicMove.gif)
 
 例2:对View大小进行动画
 
@@ -120,7 +124,10 @@ basic.completionBlock = ^(POPAnimation *anim, BOOL finished) { //完成状态blo
 ```
 
 动画效果:
+![Alt Text](https://github.com/tiantianlan/Image/blob/master/POP/a.gif)
 
+
+<img src="https://github.com/tiantianlan/Image/blob/master/POP/scale.gif"/>
 
 ##4. POPSpringAnimation
 POPSpringAnimation 对属性进行动画，具有回弹效果。
@@ -263,4 +270,8 @@ rotationAnim.toValue = @(0);
 动画效果：
 
 ##8.总结
-其实只需要熟练掌握POP自带的三种动画 即可完成大部分的动画效果 如果实在是无法满足你的需求的话 自定义动画也基本可以满足你的要求。
+学习iOS动画最好先学习POP动画，比较简单易懂，而且用法都是一样的。
+
+其实只需要熟练掌握POP自带的三种动画 即可完成大部分的动画效果。
+
+ 如果实在是无法满足你的需求的话 自定义动画也基本可以满足你的要求。
