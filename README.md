@@ -17,13 +17,14 @@ POP动画结束后，不会回到起始位置。
 >
 >POPCustomAnimation 自定义动画
 
-我们先看一个例子：
+我们先看一个例子，这是POPBasicAnimation动画
 
 ![Alt Text](https://github.com/tiantianlan/Image/blob/master/POP/Cell.gif)
 
 ##2. 基础用法
 
-###2.1 方法创建
+###2.1 方法使用
+主要可以分以下四步：
 >1. 创建POPAnimation对象 `POPSpringAnimation *basicAnimation = [POPSpringAnimation animation];`
 >
 >2. 设置需要变化的kPOP值 `basicAnimation.property = [POPAnimatableProperty propertyWithName:aName]`
@@ -34,7 +35,7 @@ POP动画结束后，不会回到起始位置。
 >
 
 ###2.2 代理方法 POPAnimationDelegate 
-
+POPAnimation包含4个代理方法，用于动画开始、进行以及结束的时候回调。
 ```
 - (void)pop_animationDidStart:(POPAnimation *)anim
 {
@@ -278,12 +279,12 @@ alert:
 ![Alt Text](https://github.com/tiantianlan/Image/blob/master/POP/alert.gif)
 
 进度条:
+![Alt Text](https://github.com/tiantianlan/Image/blob/master/POP/progress.gif)
 
-https://github.com/tiantianlan/Image/blob/master/POP/progress.gif
 
 ##8.总结
 学习iOS动画最好先学习POP动画，比较简单易懂，而且用法都是一样的。
 
 其实只需要熟练掌握POP自带的三种动画 即可完成大部分的动画效果。
 
- 如果实在是无法满足你的需求的话 自定义动画也基本可以满足你的要求。
+如果实在是无法满足你的需求的话 自定义动画也基本可以满足你的要求。
