@@ -6,7 +6,7 @@ POP动画结束后，不会回到起始位置。
 
 官网地址 : [https://github.com/facebook/pop](https://github.com/facebook/pop)
 
-文档地址 : [https://github.com/tiantianlan/POPDemo](https://github.com/tiantianlan/POPDemo)
+本文地址 : [https://github.com/tiantianlan/POPDemo](https://github.com/tiantianlan/POPDemo)
 
 主要包含以下类型动画：
 >POPBasicAnimation 基础动画
