@@ -135,6 +135,10 @@ static NSString *ident = @"ident";
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    if (indexPath.section == 5)
+    {
+        return;
+    }
     NSString *str = self.classArray[indexPath.section][indexPath.row];
     UIViewController *controller = [[NSClassFromString(str) alloc] init];
     [self.navigationController pushViewController:controller animated:YES];

@@ -79,7 +79,8 @@
     switch (pan.state)
     {
         case UIGestureRecognizerStateBegan:
-        case UIGestureRecognizerStateChanged: {
+        case UIGestureRecognizerStateChanged:
+        {
             [self.pushView.layer pop_removeAllAnimations];
             
             CGPoint translation = [pan translationInView:self.view];
@@ -94,8 +95,8 @@
         }
             
         case UIGestureRecognizerStateEnded:
-        case UIGestureRecognizerStateCancelled: {
-            
+        case UIGestureRecognizerStateCancelled:
+        {
             CGPoint velocity = [pan velocityInView:self.view];
             [self addDecayPositionAnimationWithVelocity:velocity];
             break;

@@ -108,7 +108,6 @@
 		350FA64D1D9CF01000C597AF /* POPDemo */ = {
 			isa = PBXGroup;
 			children = (
-				350FA6A61D9CF47600C597AF /* Info.plist */,
 				350FA68E1D9CF0FB00C597AF /* Main */,
 				350FA6951D9CF0FB00C597AF /* Other */,
 				350FA6651D9CF0F300C597AF /* 弹簧动画 */,
@@ -116,6 +115,7 @@
 				350FA6751D9CF0F300C597AF /* 基础动画 */,
 				350FA67A1D9CF0F300C597AF /* 减速动画 */,
 				350FA67D1D9CF0F300C597AF /* 自定义动画 */,
+				350FA6A61D9CF47600C597AF /* Info.plist */,
 				350FA65C1D9CF01000C597AF /* LaunchScreen.storyboard */,
 				350FA64E1D9CF01000C597AF /* Supporting Files */,
 			);
